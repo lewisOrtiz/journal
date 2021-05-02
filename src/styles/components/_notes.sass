@@ -1,0 +1,55 @@
+.notes__screen
+  flex: 1 1 auto
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 5rem
+  overflow: hidden
+  overflow-y: scroll
+
+.notes__form
+  display: flex
+  margin: 0px auto 50px auto
+  flex-direction: column
+  width: 380px
+  padding: 2rem
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15)
+  border-radius: 25px
+  .notes__input
+    border: 0px
+    border-bottom: 2px solid lighten($primary, 30 )
+    margin: 0 0 15px 0
+    padding: 7px 0
+    width: 100%
+    font-weight: 900
+    font-size: 23px
+    color: #737373
+    color: darken($primary, 50)
+    transition: border-bottom 0.3s ease
+    &:focus
+      border-bottom: 2px solid darken($primary, 10 )
+      outline: none
+  .notes__text-area
+    flex: 1 1 auto
+    width: 100%
+    resize: none
+    padding: 1rem .5rem
+    border-radius: 0px 0px 20px 20px   
+    border: 2px solid lighten($primary, 30)
+    font-size: 18px
+    font-weight: 900
+    color: #aaaaaa
+    color: darken($primary, 50)
+    transition: border 0.3s ease
+    &:focus
+      border: 2px solid darken($primary, 10 )
+      outline: none
+.notes__picture
+  width: 350px
+  height: 200px
+  margin: auto 
+  border-radius: 25px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 2rem

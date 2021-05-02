@@ -1,0 +1,98 @@
+.journal__main-content
+  width: 100vw
+  height: 100vh
+  display: flex
+  aside
+    background: linear-gradient(188.77deg, #792AF9 0%, #FF1E1E 93.32%)
+    color: white
+    display: flex
+    flex-direction: column
+    font-weight: 800
+    height: 100vh
+    padding: 1rem
+    text-align: center
+    width: 400px
+    .journal__header-aside
+      align-items: center
+      display: flex
+      justify-content: space-between
+    .journal__new-entry
+      margin-top: 20px
+      &:hover
+        cursor: pointer
+        color: darken(white, 20 )
+      &:active
+        color: darken(white, 30)
+    .journal__entries
+      margin-top: 30px
+      flex: 1 1 auto
+      overflow: hidden
+      overflow-y: scroll
+      &::-webkit-scrollbar
+      	width: 0.5rem
+      &::-webkit-scrollbar-thumb
+	      background: linear-gradient(200deg,#ff0000 10%, #792AF9)
+	      border-radius: 25px
+
+  main
+    width: 100%
+    display: flex
+    flex-direction: column
+    .journal__app-bar
+      align-items: center
+      background: linear-gradient(269.97deg, #FF0000 0.03%, #792AF9 100%)
+      color: white
+      display: flex
+      justify-content: space-between
+      font-weight: 800
+      height: 50px
+      padding: 1rem
+      width: 100%
+      .journal__actions
+        display: flex
+        justify-content: space-between
+        width: 150px
+    .journal__content
+      width: 100%
+      flex: 1 1 auto
+      display: flex
+      justify-content: center
+      align-items: center
+      p
+        color: $primary
+        font-weight: 800
+        text-align: center
+.journal__journal-entry
+  display: flex
+  align-items: center
+  width: 95%
+  color: black
+  height: 80px
+  background: white
+  border-radius: 5px
+  padding: .2rem
+  margin: 10px auto
+  overflow: hidden
+  animation: fade 1s ease
+  &:hover
+    cursor: pointer
+    filter: brightness(80%)
+  .journal__journal-entry-date
+    width: 80px
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  .journal__journal-entry-text
+    flex: 1 1 auto
+    font-weight: 500
+  .journal__journal-entry-img
+    width: 80px
+    height: 100%
+
+@keyframes fade
+  0%
+    opacity: 0
+  100%
+    opacity: 1
